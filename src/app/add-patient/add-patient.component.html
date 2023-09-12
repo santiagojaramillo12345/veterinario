@@ -1,0 +1,19 @@
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" formControlName="name" required>
+  </div>
+  <div>
+    <label for="species">Especie:</label>
+    <input type="text" id="species" formControlName="species" required>
+  </div>
+  <div>
+    <label for="breed">Raza:</label>
+    <input type="text" id="breed" formControlName="breed">
+  </div>
+  <div>
+    <label for="age">Edad:</label>
+    <input type="text" id="age" formControlName="age">
+  </div>
+  <button type="submit">Agregar Paciente</button>
+</form>

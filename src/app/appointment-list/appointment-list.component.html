@@ -1,0 +1,12 @@
+<div>
+  <h2>Lista de Citas</h2>
+  <ul>
+    <li *ngFor="let appointment of appointments">
+      <!-- Mostrar la información de la cita aquí -->
+      <p>Fecha: {{ appointment.date }}</p>
+      <p>Hora: {{ appointment.time }}</p>
+      <p>Nombre del Paciente: {{ appointment.patientName }}</p>
+      <p>Comentarios: {{ appointment.comments }}</p>
+    </li>
+  </ul>
+</div>
